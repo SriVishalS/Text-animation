@@ -1,0 +1,42 @@
+body {
+  background-color: #45011a;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    -45deg,
+    #dfb79e,
+    #dfb79e,
+    #2b0413,
+    #2b0413,
+    #e25d52,
+    #e25d52
+  );
+  background-size: 300%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 2vw;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 6s ease-in-out infinite;
+  -moz-animation: animated_text 6s ease-in-out infinite;
+  -webkit-animation: animated_text 6s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
